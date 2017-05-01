@@ -1,10 +1,6 @@
 package wdsr.exercise4.receiver;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
-
-import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.concurrent.TimeUnit;
 
 import javax.jms.Connection;
 import javax.jms.Destination;
@@ -17,7 +13,6 @@ import javax.jms.Session;
 import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.command.ActiveMQObjectMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
