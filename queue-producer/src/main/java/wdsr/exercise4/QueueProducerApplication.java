@@ -36,7 +36,7 @@ public class QueueProducerApplication {
 	@PostConstruct
 	private void send10000PersistentCommunicates() {
 		long startTime = System.nanoTime();
-		for(int i = 0; i < 10; i++){
+		for(int i = 0; i < 10000; i++){
 			sender.sendTextPersistent("test_" + i);
 		}
 		long stopTime = System.nanoTime();
@@ -46,7 +46,7 @@ public class QueueProducerApplication {
 	@PostConstruct
 	public void send10000NonPersistentCommunicates() {
 		long startTime = System.nanoTime();
-		for(int i = 0; i < 10; i++){
+		for(int i = 0; i < 10000; i++){
 			sender.sendTextNonPersistent("test_" + i);
 		}
 		long stopTime = System.nanoTime();
